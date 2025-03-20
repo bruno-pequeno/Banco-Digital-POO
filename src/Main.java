@@ -1,8 +1,6 @@
-import domain.services.Operacoes;
-
 import java.util.*;
 
-import static domain.services.Operacoes.*;
+import static services.Operacoes.*;
 
 public class Main {
     private static final Scanner scanner = new Scanner(System.in);

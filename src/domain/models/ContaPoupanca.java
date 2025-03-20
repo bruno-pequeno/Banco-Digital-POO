@@ -1,7 +1,4 @@
-package domain;
-
-import domain.models.Cliente;
-import domain.models.Conta;
+package domain.models;
 
 public class ContaPoupanca extends Conta {
     public ContaPoupanca(Cliente cliente) {

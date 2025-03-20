@@ -1,6 +1,6 @@
-package domain.services;
+package services;
 
-import domain.ContaPoupanca;
+import domain.models.ContaPoupanca;
 import domain.models.Banco;
 import domain.models.Cliente;
 import domain.models.Conta;
