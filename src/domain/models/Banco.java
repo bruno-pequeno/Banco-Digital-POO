@@ -1,13 +1,16 @@
 package domain.models;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Banco {
     private String name;
-    private List<Conta> contas;
+    private List<Cliente> clientes;
 
     public Banco(String name){
         this.name = name;
+        this.clientes = new ArrayList<>();
     }
 
     public String getName() {
@@ -18,18 +21,18 @@ public class Banco {
         this.name = name;
     }
 
-    public List<Conta> getContas() {
-        return contas;
+    public List<Cliente> getClientes() {
+        return clientes;
     }
 
-    public void setContas(List<Conta> contas) {
-        this.contas = contas;
-    }
-
-    private void imprimirClientes(){
-        for(Conta conta: contas){
+    public void imprimirClientes(){
             System.out.println("======= Lista de Clientes Banco " + name + "=======");
-            System.out.println(conta.cliente.getNome());
+        for(Cliente cliente: clientes){
+            System.out.println(cliente.getNome());
         }
+    }
+
+    public void adicionarCliente(Cliente cliente){
+        clientes.add(cliente);
     }
 }
